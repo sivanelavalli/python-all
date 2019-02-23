@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table align="center" border="2" bgcolor="yellow">
+        <tr>
+            <th>IDNO</th>
+            <th>NAME</th>
+            <th>CLASS</th>
+            <th>MARKS</th>
+            <th>TOTAL</th>
+        </tr>
+        {% for x,y in data.items %}
+            <tr bgcolor="aqua"><td>{{ x }}</td>
+            <td>{{ y.name }}</td>
+            <td>{{ y.class }}</td>
+            <td>{{ y.marks }}</td>
+            <td>{{ y.total }}</td>
+            </tr>
+            {% for total in data.items %}
+
+            {% endfor %}
+        {% endfor %}
+    </table>
+</body>
+</html>

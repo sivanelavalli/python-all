@@ -1,0 +1,3 @@
+group.siva-group.krishna-group.dhanu-group.srinu
+enable ssh
+enable telsnet
